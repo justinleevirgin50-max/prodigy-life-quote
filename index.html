@@ -1,29 +1,59 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prodigy Life | Mortgage Protection Quote Request</title><meta name="theme-color" content="#0f2d4a">
+<title>Prodigy Life | Mortgage Protection Quote Request</title><meta name="theme-color" content="#0b0b0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0f2d4a;--navy2:#16406a;--gold:#f2b632;--ink:#1d2733;--muted:#556372;--line:#dfe5ec;--bg:#f5f8fb;--err:#b42318}
-*{box-sizing:border-box}body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;font-size:16px}
-.top{background:var(--navy);color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.brand{font-weight:800;font-size:20px;letter-spacing:.3px}.brand span{color:var(--gold)}
-.call{background:var(--gold);color:#1b1b1b;text-decoration:none;font-weight:700;padding:9px 14px;border-radius:8px;white-space:nowrap}
-.trust{background:#0b2238;color:#e9d9a8;text-align:center;font-size:13px;padding:7px 12px;letter-spacing:.2px}
-.hero{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:26px 18px 70px;text-align:center}
-.hero h1{margin:0 0 8px;font-size:26px}.hero p{margin:0 auto;max-width:560px;opacity:.9}
-.card{background:#fff;max-width:640px;margin:-50px auto 30px;border-radius:14px;box-shadow:0 12px 36px rgba(4,20,40,.2);padding:22px}
-fieldset{border:0;padding:0;margin:0 0 14px}legend{font-weight:800;color:var(--navy);border-bottom:2px solid var(--gold);padding-bottom:4px;margin-bottom:10px;width:100%}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.row{grid-template-columns:1fr}}
-label{display:block;font-weight:600;font-size:14px;margin:0 0 4px}.f{margin-bottom:12px}
-input,select,textarea{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1.5px solid #c9d3de;border-radius:8px;background:#fff;color:var(--ink)}
-textarea{min-height:76px}input:focus,select:focus,textarea:focus{outline:3px solid rgba(242,182,50,.35);border-color:var(--navy)}
-.radios{display:flex;gap:18px}.radios label{font-weight:400;display:flex;gap:6px;align-items:center}.radios input{width:auto}
-.consent{display:flex;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;margin:6px 0 12px}
-.consent input{width:20px;height:20px;flex:none;margin-top:3px}.consent label{font-weight:400;font-size:13px}
-button{width:100%;background:var(--navy);color:#fff;border:0;border-radius:10px;padding:16px;font-size:18px;font-weight:700;cursor:pointer;border-bottom:4px solid var(--gold)}
-.fine{font-size:12.5px;color:var(--muted);text-align:center;margin:12px 0 0}.req{color:var(--err)}
-.thanks{display:none;text-align:center;padding:20px 6px}.thanks h2{color:var(--navy)}
-footer{text-align:center;color:var(--muted);font-size:12.5px;padding:0 18px 30px}
+:root{--bg:#0b0b0b;--gold:#D4AF5F;--gold-soft:#e4cb8a;--ink:#f6f1e6;--muted:#d2c4a8;--line:rgba(212,175,95,.55);--field:#141414;--card:#111111;--err:#f0c7b0}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{margin:0;font-family:Montserrat,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:16px}
+.mast{padding:28px 18px 8px;text-align:center}
+.logo-frame{width:min(380px,86vw);aspect-ratio:736/686;margin:0 auto 8px;overflow:hidden;position:relative}
+.logo-frame img{position:absolute;width:139.13%;max-width:none;height:auto;left:-20.69%;top:-26.72%}
+.call{display:inline-block;color:var(--gold);text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:10px 16px;border:1px solid var(--gold);border-radius:2px}
+.call:hover,.call:focus-visible{background:var(--gold);color:#0b0b0b;outline:none}
+.trust{color:var(--muted);text-align:center;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:16px 16px 0;line-height:1.7}
+.hero{color:var(--ink);padding:22px 18px 26px;text-align:center}
+.hero h1{margin:0 0 12px;font-family:Cinzel,"Palatino Linotype",Palatino,serif;font-weight:600;font-size:clamp(26px,5vw,40px);color:var(--gold);letter-spacing:.06em;line-height:1.2}
+.hero p{margin:0 auto;max-width:560px;color:var(--muted);font-size:15.5px}
+.card{background:var(--card);max-width:680px;margin:0 auto 36px;border:1px solid var(--line);border-radius:2px;padding:26px 22px 22px}
+fieldset{border:0;padding:0;margin:0 0 18px}
+legend{font-family:Cinzel,"Palatino Linotype",Palatino,serif;font-weight:600;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;font-size:15px;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:14px;width:100%}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}.card{margin:0 12px 28px;padding:20px 14px 16px}}
+.f>label,fieldset>label{display:block;font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.f{margin-bottom:14px}
+input:not([type="checkbox"]):not([type="radio"]),select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 12px;border:1px solid rgba(212,175,95,.45);border-radius:2px;background:var(--field);color:var(--ink)}
+textarea{min-height:88px;resize:vertical}
+input:not([type="checkbox"]):not([type="radio"]):focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold);box-shadow:0 0 0 4px rgba(212,175,95,.22)}
+::placeholder{color:#cbb892;opacity:1}
+select option{background:#141414;color:var(--ink)}
+.radios{display:flex;gap:22px;flex-wrap:wrap}
+.radios label{font-weight:500;font-size:15px;letter-spacing:0;text-transform:none;color:var(--ink);display:flex;gap:8px;align-items:center}
+.radios input{width:18px;height:18px;accent-color:var(--gold)}
+.consent{display:flex;gap:10px;background:#161616;border:1px solid var(--line);border-radius:2px;padding:12px;margin:8px 0 16px}
+.consent input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--gold)}
+.consent label{font-weight:400;font-size:13.5px;letter-spacing:0;text-transform:none;color:var(--muted);line-height:1.5}
+button{width:100%;background:var(--gold);color:#0b0b0b;border:0;border-radius:2px;padding:16px;font-family:inherit;font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+button:hover{background:var(--gold-soft)}
+button:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
+button:disabled{opacity:.65;cursor:wait}
+.fine{font-size:12.5px;color:var(--muted);text-align:center;margin:14px 0 0;line-height:1.5}
+.req{color:var(--gold-soft)}
+.thanks{display:none;text-align:center;padding:28px 8px}
+.thanks h2{font-family:Cinzel,"Palatino Linotype",Palatino,serif;color:var(--gold);font-weight:600;letter-spacing:.08em;font-size:32px;margin:8px 0}
+.thanks p{color:var(--muted)}
+.thanks a{color:var(--gold)}
+.mark{width:64px;height:64px;border-radius:50%;background:var(--gold);margin:0 auto 14px;display:flex;align-items:center;justify-content:center;color:#0b0b0b;font-size:32px}
+.thanks .brand{font-family:Cinzel,"Palatino Linotype",Palatino,serif;color:var(--gold);letter-spacing:.22em;font-weight:600;font-size:14px}
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:0 18px 36px;letter-spacing:.04em}
+footer a{color:var(--gold);text-decoration:none}
 </style></head><body>
-<header class="top"><div class="brand"><svg width="30" height="30" viewBox="0 0 32 32" style="vertical-align:-8px;margin-right:8px"><path d="M16 2 4 7v8c0 7.5 5.2 13.4 12 15 6.8-1.6 12-7.5 12-15V7z" fill="#f2b632"/><path d="M12 22V10h5.2a4 4 0 0 1 0 8H12" fill="none" stroke="#0f2d4a" stroke-width="2.6"/></svg>PRODIGY <span>LIFE</span></div><a class="call" href="tel:+18014723455">Call 801-472-3455</a></header>
+<header class="mast">
+<div class="logo-frame"><img src="logo.png" alt="Prodigy Life. Creating Generational Confidence."></div>
+<a class="call" href="tel:+18014723455">Call 801-472-3455</a>
+</header>
 <div class="trust">Licensed life insurance producer · Mortgage protection specialists · No exam options available</div>
 <section class="hero"><h1>Mortgage Protection Quote Request</h1><p>Fill out this short financial inventory and Justin Virgin will prepare your personalized quote options and reach out at the time you choose.</p></section>
 <main class="card">
@@ -59,9 +89,9 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:0 18px 30px
 <button type="submit">Get My Quote</button>
 <p class="fine">Coverage subject to underwriting and carrier approval. Please do not enter Social Security or banking information on this form; we never ask for it here.</p>
 </form>
-<div class="thanks" id="ty"><div style="width:64px;height:64px;border-radius:50%;background:var(--navy);border:3px solid var(--gold);margin:0 auto 10px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:32px">✓</div><div class="brand" style="color:var(--navy)">PRODIGY <span>LIFE</span></div><h2>Thank you!</h2><p>Your quote request was received. Justin Virgin with Prodigy Life will review your information and contact you at your preferred time.</p><p>Questions now? Call <a href="tel:+18014723455">801-472-3455</a>.</p></div>
+<div class="thanks" id="ty"><div class="mark">✓</div><div class="brand">PRODIGY LIFE</div><h2>Thank you!</h2><p>Your quote request was received. Justin Virgin with Prodigy Life will review your information and contact you at your preferred time.</p><p>Questions now? Call <a href="tel:+18014723455">801-472-3455</a>.</p></div>
 </main>
-<footer>© Prodigy Life · Justin Virgin, Licensed Life Insurance Producer · 801-472-3455</footer>
+<footer>© Prodigy Life · Justin Virgin, Licensed Life Insurance Producer · <a href="tel:+18014723455">801-472-3455</a></footer>
 <script>
 const S="Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New_Hampshire New_Jersey New_Mexico New_York North_Carolina North_Dakota Ohio Oklahoma Oregon Pennsylvania Rhode_Island South_Carolina South_Dakota Tennessee Texas Utah Vermont Virginia Washington West_Virginia Wisconsin Wyoming District_of_Columbia".split(" ");
 const st=document.getElementById('state');S.forEach(s=>{const o=document.createElement('option');o.textContent=s.replace(/_/g,' ');st.appendChild(o)});
